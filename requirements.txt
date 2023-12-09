@@ -17,3 +17,4 @@ reportlab==4.0.7
 six==1.16.0
 tzdata==2023.3
 Werkzeug==2.0.1
+gevent~=23.9.1

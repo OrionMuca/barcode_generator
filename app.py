@@ -5,6 +5,7 @@ from barcode import Code128
 from barcode.writer import ImageWriter
 from reportlab.lib.units import cm, mm
 from reportlab.pdfgen import canvas
+from gevent.pywsgi import WSGIServer
 
 app = Flask(__name__)
 
@@ -93,5 +94,7 @@ def upload_file():
 
         return send_from_directory(app.config['UPLOAD_FOLDER'], 'labels.pdf', as_attachment=True)
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    http_server = WSGIServer(('', 5000), app)
+    http_server.serve_forever()
