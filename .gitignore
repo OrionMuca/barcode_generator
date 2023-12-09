@@ -7,4 +7,3 @@ venv/
 *.db
 .idea/
 .DS_Store
-/uploads
