@@ -1,3 +1,9 @@
 {
+  "functions": {
+    "api": {
+      "runtime": "python3.6",
+      "memory": 1024
+    }
+  },
   "buildCommand" : "python api/app.py"
 }
