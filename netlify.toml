@@ -1,3 +1,2 @@
 [build]
-command = "python app.py"
-environment = { PYTHON_VERSION = "3.10.2" }
+PYTHON_VERSION = "3.10"
