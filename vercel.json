@@ -1,9 +1,9 @@
 {
+  "buildCommand" : "python api/app.py",
   "functions": {
     "api": {
-      "runtime": "now-php@1.0.0",
+      "runtime": "python3.8",
       "memory": 1024
     }
-  },
-  "buildCommand" : "python api/app.py"
+  }
 }
