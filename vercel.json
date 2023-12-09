@@ -2,7 +2,7 @@
   "buildCommand" : "python api/app.py",
   "functions": {
     "api": {
-      "runtime": "python3.8",
+      "runtime": "now-python@3.6.1",
       "memory": 1024
     }
   }
