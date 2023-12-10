@@ -68,7 +68,7 @@ def create_labels(data, output_path):
 def index():
     return render_template('index.html')
 
-@app.route('/download', methods=['GET'])
+@app.route('/download', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
         return render_template('index.html', error='No file part')

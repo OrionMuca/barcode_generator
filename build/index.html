@@ -6,12 +6,10 @@
 </head>
 <body>
   <h1>Barcode Generator</h1>
-  <form method="post" enctype="multipart/form-data" action="/download">
+  <form method="post" enctype="multipart/form-data" action="/">
     <input type="file" name="file" accept=".xls, .xlsx">
     <input type="submit" value="Generate Labels">
   </form>
-  {% if error %}
-    <p>{{ error }}</p>
-  {% endif %}
+  
 </body>
 </html>
